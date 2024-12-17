@@ -5,11 +5,11 @@ const router = express.Router();
 // Define Your API Routes Here
 /* ************************************************************************* */
 
+import categoryActions from "./modules/category/categoryActions";
 // Define item-related routes
 import itemActions from "./modules/item/itemActions";
 import sayActions from "./modules/item/say/sayActions";
 import programAction from "./modules/program/programAction";
-import categoryActions from "./modules/category/categoryActions";
 
 router.get("/api/items", itemActions.browse);
 router.get("/api/items/:id", itemActions.read);
