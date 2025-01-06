@@ -17,7 +17,7 @@ const categories = [
 
 /* Here you code */
 
-const browse: RequestHandler = (req, res) => {
+const browse: RequestHandler = async (req, res) => {
   res.json(categories);
 };
 
